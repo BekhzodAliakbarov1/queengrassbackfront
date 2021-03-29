@@ -25,7 +25,7 @@ SECRET_KEY = '(9tq-l_*16xk$h%@j2)398*pw*duzps%l^quog*pzimtm@7kyv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['queensgrass-hbbh.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -131,11 +131,9 @@ STATICFILES_DIR = [
     os.path.join(BASE_DIR, 'static')
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_STORAGE = 'witesnoise.django.GzipManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'witesnoise.django.GzipManifestStaticFilesStorage'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images');
-
-SITE_ID = 1
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
